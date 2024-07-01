@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="../css/logIn.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="flip" />
+      <div class="cover">
+        <div class="front">
+          <img src="1.jpg" alt="" class="img_1" />
+        </div>
+        <div class="back">
+          <!-- <img class="backImg" src="images/backImg.jpg" alt="" /> -->
+          <div class="text">
+            <span class="text-1"
+              >Complete miles of journey <br />
+              with one step</span
+            >
+            <span class="text-2">Let's get started</span>
+          </div>
+        </div>
+      </div>
+      <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+            <form action="#">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input type="text" id="email_login" placeholder="Enter your email" required />
+                </div>
+                <div id="Email_login_div">
+                  Email is incorrect
+                </div>  
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    placeholder="Enter your password"
+                    required
+                    id="login_pass"
+                  />
+                </div> 
+                <div id="Password_logIn">
+                  The password is incorrect
+                </div>
+                <div class="text"><a href="#">Forgot password?</a></div>
+                <div class="button input-box">
+                  <input type="submit" id="submit" value="Sumbit" />
+                </div>
+                <div class="text sign-up-text">
+                  Don't have an account? <label for="flip">Sigup now</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="signup-form">
+            <div class="title">Signup</div>
+            <form action="#" id="Signup_form_id">
+              <div class="input-boxes">
+                <div id="You_are_registered">
+                  <p>Email already exists. Please use another email.</p>
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    placeholder="Enter your First Name"
+                    required
+                    id="First_Name"
+                    title="Enter your First Name"
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    placeholder="Enter your Last Name"
+                    title="Enter your Last Name"
+                    required
+                    id="Last_Name"
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <input
+                    id="date"
+                    type="date"
+                    placeholder="Enter your Age"
+                    title="Enter your Age"
+                    required
+                  />
+                </div>
+                <!-- <div id="Data_p_div">
+                  "Enter your birthday in this format: YYYY-MM-DD"
+                </div> -->
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="text"
+                    placeholder="Enter your email"
+                    title="Enter your email"
+                    id="Email"
+                    required
+                  />
+                </div>
+                <div id="Email_p_div">
+                  Please enter the email correctly, for EX : aa@gmail.com
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    placeholder="Enter your password"
+                    required
+                    id="Password_Singup"
+                    title="Enter your password"
+                  />
+                </div>
+                <div id="Passward_p_div">
+                  <li id="characters_Passward_p">More than 8 characters</li>
+                  <li id="Capital_Passward_p">At least one capital letter</li>
+                  <li id="Number_Passward_p">At least one number</li>
+                  <li id="Special_Characters_p">
+                    special characters : @ $ ! % * ? &
+                  </li>
+                </div>
+                <div class="button input-box">
+                  <input type="submit" value="Sumbit" id="Sumbit_SingUp" />
+                </div>
+                <div class="text sign-up-text">
+                  Already have an account? <label for="flip">Login now</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../js/signUp.js"></script>
+    <script type="module" src="../js/logIn.js"></script>
+  </body>
+</html>

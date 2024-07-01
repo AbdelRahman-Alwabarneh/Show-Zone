@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.contact-us {
+  display: flex;
+  height: 100vh;
+}
+
+.contact-us .left {
+  width: 40%;
+  background-color: #bceeec;
+  padding: 20px;
+  /* display: flex; */
+}
+
+.contact-us .left ul {
+  list-style: none;
+}
+
+.contact-us .left li {
+  margin-bottom: 20px;
+}
+
+.contact-us .left li img {
+  margin-right: 10px;
+}
+
+.contact-us .right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.contact-us form {
+  max-width: 500px;
+}
+
+.contact-us form .first {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact-us form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #272121;
+}
+
+.contact-us form input[type="text"],
+.contact-us form input[type="email"],
+.contact-us form input[type="tel"],
+.contact-us form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-us form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-us form input[type="submit"] {
+  background-color: #3dd2cc;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #000000;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.contact-us form .first div {
+  width: 47%;
+}
+.contact-us form .first div:not(:last-child) {
+  margin-right: 5%;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+ul li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 180px;
+  margin-left: 0;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 840px) {
+  .contact-us {
+    flex-direction: column;
+  }
+
+  .contact-us .left {
+    width: 100%;
+    order: 2;
+  }
+
+  .contact-us .right {
+    width: 100%;
+    order: 1;
+    justify-content: center;
+  }
+  svg {
+    display: none;
+  }
+  .contact-us .left ul {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  ul li {
+    font-size: 1rem;
+  }
+}

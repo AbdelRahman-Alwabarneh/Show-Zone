@@ -1,0 +1,163 @@
+:root {
+  --gradient-color: linear-gradient(90deg, #1e38a3, #021048);
+  --black: rgb(255, 255, 255);
+  --white: #000000;
+  --blue-1: #43e9ff;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  margin: auto auto;
+  width: 900px;
+  background-color: #ffffff;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+}
+.left-side {
+  padding-top: 0px;
+  padding-right: 100px;
+}
+.google-log {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+}
+/* Start NavBar */
+
+.navbar {
+  padding-left: 95px;
+  padding-right: 95px;
+  background-color: var(--white);
+  border-bottom: 2px solid gray;
+}
+
+.navbar-brand img {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+}
+
+.nav-link {
+  margin-left: 10px;
+  color: var(--black);
+}
+
+.nav-link:hover,
+.dropdown-menu a:hover {
+  color: var(--blue-1);
+}
+
+.dropdown-menu-fullscreen {
+  top: 50px; /* Adjust this value based on your navbar height */
+  position: absolute;
+  z-index: 1050;
+  background-color: #f8f9fa; /* Light background for better visibility */
+  padding: 20px; /* Add some padding for a better look */
+  border-radius: 0; /* Remove border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e9ecef; /* Add a subtle border between items */
+}
+.checkbox-container .checkbox {
+  margin-right: 10px;
+}
+.checkbox-container:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+.dropdown-header {
+  font-weight: bold;
+  color: #495057;
+  margin-bottom: 10px;
+}
+.Log_In {
+  color: white; /* لون النص */
+  background-color: rgb(0, 197, 190); /* لون الخلفية */
+  border-color: rgb(0, 225, 218); /* لون الحدود */
+}
+.Log_In a {
+  text-decoration: none;
+  color: white;
+}
+.Log_In a:hover {
+  text-decoration: none;
+  color: white;
+}
+.btn {
+  color: #3dd2cc;
+  border: #3dd2cc solid 1px;
+  margin-top: 15px;
+}
+.btn.show {
+  background-color: #31afab;
+}
+.btn:hover {
+  background-color: #31afab;
+}
+/* لإضافة تأثير التمرير (hover) */
+.Log_In:hover {
+  color: white; /* لون النص عند التمرير */
+  background-color: rgb(86, 169, 173); /* لون الخلفية عند التمرير */
+  border-color: rgb(64, 169, 214); /* لون الحدود عند التمرير */
+}
+
+.profile-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.profile-dropdown .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+.logo_user_1 {
+  border-radius: 100%;
+}
+#Logo_user_2 {
+  display: none;
+}
+.profile-dropdown .dropdown-menu {
+  left: auto;
+  right: auto;
+}
+
+@media (max-width: 840px) {
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .Log_In {
+    margin-top: 20px;
+    margin-left: 0 !important;
+  }
+}
+
+/* End NavBar */
+/* Start Footer */
+.footer_home {
+  background-color: #000000;
+}
+.footer_home {
+  background-color: black;
+  color: white;
+}
+.footer_home .text-muted {
+  color: white !important;
+}
+.footer_home .col-md-4 {
+  margin-bottom: 0;
+}
+/* End Footer */
+
+.card img {
+  transition: 0.3s;
+}
+.card:hover img {
+  transform: scale(1.2);
+  filter: brightness(0.3);
+}
